@@ -4,7 +4,7 @@ const { type } = require("os");
 const AlunoSchema = mongoose.Schema({
   nome: String,
   turma: {
-    String,
+    type: String,
     enum: ["A", "B", "C", "D", "E"],
   },
   notas: [{
